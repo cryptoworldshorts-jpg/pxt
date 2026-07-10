@@ -23,43 +23,57 @@
         h1 { color: #ffffff; font-size: 40px; margin-bottom: 5px; }
         h2 { color: #ff5e00; margin-top: 0; font-size: 28px; }
 
-        /* Grid sistem za cijene */
+        /* Novi Grid sistem: 3 u redu, pa 2 ispod */
         .price-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(3, 1fr); /* 3 jednaka stupca */
             gap: 20px;
-            margin: 40px 0;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+
+        /* Osiguravamo da posljednja dva elementa popune prostor u drugom redu */
+        .card:nth-child(4), 
+        .card:nth-child(5) {
+            grid-column: span 1; /* Ovo je default, ali čisto da znaš logiku */
         }
 
         .card {
             border: 1px solid #ff5e00;
-            padding: 20px;
+            padding: 25px;
             border-radius: 10px;
             background-color: #252a30;
             transition: 0.3s;
         }
 
-        .card:hover { transform: scale(1.05); }
-        .card h3 { color: #ff5e00; margin-top: 0; }
+        .card:hover { transform: scale(1.03); border-color: #ff8c00; }
+        .card h3 { color: #ff5e00; margin-top: 0; font-size: 22px; }
 
         /* Dugme */
         .reg-btn {
             background-color: #ff5e00;
             color: white;
             border: none;
-            padding: 20px 50px;
+            padding: 20px 60px;
             font-size: 22px;
             border-radius: 50px;
             font-weight: bold;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 30px;
         }
+
+        .reg-btn:hover { background-color: #e05200; }
 
         /* Socijalne mreže */
         .socials { margin-top: 50px; }
         .socials a { color: #ff5e00; margin: 0 15px; text-decoration: none; font-size: 18px; }
+
+        /* Responsivnost za mobitel */
+        @media (max-width: 768px) {
+            .price-grid { grid-template-columns: 1fr; } /* Na mobitelu sve ide jedno ispod drugog */
+        }
     </style>
 </head>
 <body>
