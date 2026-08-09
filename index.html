@@ -131,63 +131,96 @@
                 <div class="inline-flex items-center space-x-2 bg-phoenixOrange/10 border border-phoenixOrange/20 px-4 py-1.5 rounded-full text-phoenixOrange text-sm font-semibold mb-4">
                     <span>🔥 U TJEKU JE PRE-SALE</span>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">PRE-SALE TOKENA</h2>
-                <p class="text-phoenixOrange font-semibold text-lg">
-                    PRE-SALE završava 30.08.2026. u 12:00 po našem vremenu
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">⭐️ PXT PRE-SALE PROMOCIJA ⭐️</h2>
+                
+                <!-- Živi tajmer box -->
+                <div class="my-6 p-4 rounded-2xl bg-black/50 border border-phoenixOrange/30 inline-block max-w-lg w-full">
+                    <p class="text-xs uppercase tracking-wider text-gray-400 mb-2">Pre-Sale završava za:</p>
+                    <div id="countdown-timer" class="grid grid-cols-4 gap-2 text-center">
+                        <div class="bg-phoenixDark p-2 rounded-xl border border-white/10">
+                            <span id="days" class="text-xl sm:text-2xl font-bold text-phoenixOrange">00</span>
+                            <span class="block text-[10px] text-gray-400 uppercase">Dana</span>
+                        </div>
+                        <div class="bg-phoenixDark p-2 rounded-xl border border-white/10">
+                            <span id="hours" class="text-xl sm:text-2xl font-bold text-phoenixOrange">00</span>
+                            <span class="block text-[10px] text-gray-400 uppercase">Sati</span>
+                        </div>
+                        <div class="bg-phoenixDark p-2 rounded-xl border border-white/10">
+                            <span id="minutes" class="text-xl sm:text-2xl font-bold text-phoenixOrange">00</span>
+                            <span class="block text-[10px] text-gray-400 uppercase">Minuta</span>
+                        </div>
+                        <div class="bg-phoenixDark p-2 rounded-xl border border-white/10">
+                            <span id="seconds" class="text-xl sm:text-2xl font-bold text-phoenixOrange">00</span>
+                            <span class="block text-[10px] text-gray-400 uppercase">Sekundi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-phoenixOrange font-semibold text-sm">
+                    Kraj pretprodaje: 30.08.2026. u 14:00 po našem vremenu.
                 </p>
             </div>
 
             <!-- Glavna kartica s informacijama i tablicom -->
-            <div class="glass-card p-8 sm:p-10 rounded-3xl border border-phoenixOrange/30 space-y-8">
+            <div class="glass-card p-6 sm:p-10 rounded-3xl border border-phoenixOrange/30 space-y-8">
                 
-                <div class="text-center max-w-2xl mx-auto space-y-2">
-                    <p class="text-gray-300 text-sm sm:text-base">
-                        Kupnja tokena u pre-saleu je moguća samo preko Backofficea i cijena je fiksirana na <span class="text-white font-bold underline">0.0001 USD</span> za <span class="text-phoenixOrange font-bold">1 PXT</span>.
-                    </p>
-                </div>
-
-                <!-- Tablica cijena (Prilagođeno po vašem zahtjevu i slici) -->
+                <!-- Tablica prilagođena Phoenix stilu -->
                 <div class="overflow-x-auto rounded-2xl border border-white/10 bg-black/40">
                     <table class="w-full text-left border-collapse">
                         <thead>
-                            <tr class="border-b border-white/10 text-phoenixOrange text-xs uppercase tracking-wider">
-                                <th class="p-4 sm:p-5">Cijena (USD)</th>
-                                <th class="p-4 sm:p-5 text-right">Količina PXT Tokena</th>
+                            <tr class="border-b border-white/10 text-phoenixOrange text-xs uppercase tracking-wider bg-phoenixOrange/10">
+                                <th class="p-4 sm:p-5 text-center">Ulog (USD)</th>
+                                <th class="p-4 sm:p-5 text-center">Količina PXT</th>
+                                <th class="p-4 sm:p-5 text-center">Bonus Paketi</th>
+                                <th class="p-4 sm:p-5 text-center">Status</th>
                             </tr>
                         </thead>
                         <tbody class="text-sm sm:text-base text-gray-300 divide-y divide-white/5">
                             <tr class="hover:bg-white/5 transition">
-                                <td class="p-4 sm:p-5 font-semibold text-white">50 USD</td>
-                                <td class="p-4 sm:p-5 text-right font-bold text-phoenixOrange">500,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-white">$50</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">500,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+5 paketa</td>
+                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition bg-white/[0.01]">
+                                <td class="p-4 sm:p-5 text-center font-bold text-white">$100</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">1,000,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+10 paketa</td>
+                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
                             </tr>
                             <tr class="hover:bg-white/5 transition">
-                                <td class="p-4 sm:p-5 font-semibold text-white">100 USD</td>
-                                <td class="p-4 sm:p-5 text-right font-bold text-phoenixOrange">1,000,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-white">$200</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">2,000,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+20 paketa</td>
+                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition bg-white/[0.01]">
+                                <td class="p-4 sm:p-5 text-center font-bold text-white">$500</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">5,000,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+50 paketa</td>
+                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
                             </tr>
                             <tr class="hover:bg-white/5 transition">
-                                <td class="p-4 sm:p-5 font-semibold text-white">200 USD</td>
-                                <td class="p-4 sm:p-5 text-right font-bold text-phoenixOrange">2,000,000 PXT</td>
-                            </tr>
-                            <tr class="hover:bg-white/5 transition">
-                                <td class="p-4 sm:p-5 font-semibold text-white">500 USD</td>
-                                <td class="p-4 sm:p-5 text-right font-bold text-phoenixOrange">5,000,000 PXT</td>
-                            </tr>
-                            <tr class="hover:bg-white/5 transition">
-                                <td class="p-4 sm:p-5 font-semibold text-white">1000 USD</td>
-                                <td class="p-4 sm:p-5 text-right font-bold text-phoenixOrange">10,000,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-white">$1000</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">10,000,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+100 paketa</td>
+                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <!-- Dodatne napomene -->
-                <div class="text-center space-y-2 text-xs sm:text-sm text-gray-400">
-                    <p><i class="fa-solid fa-circle-check text-phoenixOrange mr-1"></i> Token možete kupiti u više transakcija bez ograničenja!</p>
-                    <p><i class="fa-solid fa-circle-check text-phoenixOrange mr-1"></i> Kad vam administrator odobri prethodnu kupnju možete napraviti novu.</p>
+                <!-- Dodatne napomene u Phoenix stilu -->
+                <div class="text-xs sm:text-sm text-gray-400 leading-relaxed bg-black/30 p-5 rounded-2xl border-l-4 border-phoenixOrange space-y-2 text-left">
+                    <p>🚀 <strong class="text-white">AIRDROP:</strong> Provodi se <strong class="text-phoenixOrange">30.08. u 14:00</strong> po našem vremenu na decentraliziranu adresu walleta u vašem profilu.</p>
+                    <p>💡 <strong class="text-white">Raspodjela sredstava:</strong> 90% ide u likvidnost; 10% za smartcontract, audit i marketing.</p>
+                    <p>⚡ <em class="text-gray-300">Možete obaviti više kupnji! Više kupljenih tokena znači višu početnu cijenu na berzi kad se doda likvidnost!</em></p>
+                    <p class="pt-1 border-t border-white/5"><i class="fa-solid fa-circle-check text-phoenixOrange mr-1"></i> Svim članovima koji su kupili token u pre-sale prije objave ove promocije bonus paketi će biti dodani retroaktivno u narednih 48 sati.</p>
+                    <p><i class="fa-solid fa-circle-check text-phoenixOrange mr-1"></i> Sve potrebne podatke imamo tako da nema potrebe da kontaktirate support!</p>
                 </div>
 
                 <!-- Gumb za kupovinu / pristup -->
-                <div class="pt-4 text-center">
+                <div class="pt-2 text-center">
                     <a href="https://app.phoenixtoken.net/user/register" target="_blank" rel="noopener noreferrer" class="inline-block bg-phoenixOrange hover:bg-orange-600 text-white font-bold px-10 py-4 rounded-xl transition shadow-lg shadow-phoenixOrange/30 text-base">
                         Kupi Token / Pristupi Backofficeu
                     </a>
@@ -196,6 +229,80 @@
             </div>
         </div>
     </section>
+
+    <!-- JavaScript za rad tajmera (Možeš ubaciti na dno stranice prije zatvaranja </body> tag-a) -->
+    <script>
+        const countDownDate = new Date("August 30, 2026 14:00:00").getTime();
+
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (10Evo kompletiranog koda kompletne sekcije u kojoj je umjesto fiksno upisanog broja dana ubačen **živ, automatski JavaScript tajmer** koji u realnom vremenu odbrojava vrijeme do 30.08.2026. u 14:00 sati.
+
+Kod je prilagođen bojama tvog sajta (`phoenixDark`, `phoenixOrange`, tamne staklene kartice):
+
+```html
+    <!-- PRE-SALE SEKCIJA SA TAJMEROM -->
+    <section id="presale" class="py-24 relative bg-black/30 border-y border-white/5">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(224,90,22,0.08),transparent_50%)]"></div>
+        <div class="container mx-auto px-6 max-w-4xl relative z-10">
+            
+            <!-- Naslov sekcije -->
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center space-x-2 bg-phoenixOrange/10 border border-phoenixOrange/20 px-4 py-1.5 rounded-full text-phoenixOrange text-sm font-semibold mb-4">
+                    <span>🔥 U TJEKU JE PRE-SALE</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">⭐️ PXT PRE-SALE PROMOCIJA ⭐️</h2>
+                
+                <!-- Ovdje je ubačen dinamički tajmer -->
+                <p class="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto mb-3">
+                    Još <span id="countdown-timer" class="text-phoenixOrange font-bold">otkucava vrijeme</span> imate priliku kupiti PXT token po fiksnoj cijeni od <span class="text-white font-bold underline">0.0001 USD</span>!
+                </p>
+                
+                <p class="text-phoenixOrange font-semibold text-sm">
+                    PRE-SALE završava 30.08.2026. u 14:00 po našem vremenu.
+                </p>
+            </div>
+
+            <!-- Glavna kartica s informacijama i tablicom -->
+            <div class="glass-card p-6 sm:p-10 rounded-3xl border border-phoenixOrange/30 space-y-8">
+                
+                <!-- Tablica prilagođena Phoenix stilu -->
+                <div class="overflow-x-auto rounded-2xl border border-white/10 bg-black/40">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="border-b border-white/10 text-phoenixOrange text-xs uppercase tracking-wider bg-phoenixOrange/10">
+                                <th class="p-4 sm:p-5 text-center">Ulog (USD)</th>
+                                <th class="p-4 sm:p-5 text-center">Količina PXT</th>
+                                <th class="p-4 sm:p-5 text-center">Bonus Paketi</th>
+                                <th class="p-4 sm:p-5 text-center">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm sm:text-base text-gray-300 divide-y divide-white/5">
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-4 sm:p-5 text-center font-bold text-white">$50</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">500,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+5 paketa</td>
+                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition bg-white/[0.01]">
+                                <td class="p-4 sm:p-5 text-center font-bold text-white">$100</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">1,000,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+10 paketa</td>
+                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition">
+                                <td class="p-4 sm:p-5 text-center font-bold text-white">$200</td>
+                                <td class="p-4 sm:p-5 text-center font-bold text-phoenixOrange">2,000,000 PXT</td>
+                                <td class="p-4 sm:p-5 text-center font-semibold text-amber-400">+20 paketa</td>
+                                <td class="p-4 sm:p-5 text-center text-green-400 font-bold">✓ ✅</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition bg-white/[0.01]">
+                                <td class="p-4 sm:p-5 text-center font-bold text-white">$500</td>
 
   <!-- PRE-SALE SEKCIJA -->
     <section id="presale" class="py-24 relative bg-black/30 border-y border-white/5">
